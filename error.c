@@ -153,8 +153,8 @@ void check_master(struct master *ptr, int no_rows)
 			printf("\nPolygon number: \t%d", loop2);
 			/* list the edges that make up the polygon */
 			printf("\nEdge one: %d", ptr[ioop1].poly0[loop2]);
-			printf("\nEdge two: %d", ptr[loopl].polyl[loop2]);
-			printf("\nEdge three: %d", ptr[loopl].poly2[loop2]);
+			printf("\nEdge two: %d", ptr[loop1].poly1[loop2]);
+			printf("\nEdge three: %d", ptr[loop1].poly2[loop2]);
 		}
 		printf("\n---------------------\n");
 	}

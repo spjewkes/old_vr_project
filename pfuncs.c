@@ -552,23 +552,23 @@ void set_bound(struct instance *instanceptr, int instance_no)
            minimum and maximum values accordingly */
         for (loop = 1; loop < no_verts; loop++)
         {
-                /* looking for the minlmum x value */
+                /* looking for the minimum x value */
                 if (instanceptr[instance_no].xvert[loop] < xmin)
                         xmin = instanceptr[instance_no].xvert[loop];
 
-                /* looking for the minlmum y value */
+                /* looking for the minimum y value */
                 if (instanceptr[instance_no].yvert[loop] < ymin)
                         ymin = instanceptr[instance_no].yvert[loop];
 
-                /* looking for the minlmum z value */
+                /* looking for the minimum z value */
                 if (instanceptr[instance_no].zvert[loop] < zmin)
                         zmin = instanceptr[instance_no].zvert[loop];
 
-                /* looking for the maxlmum x value */
+                /* looking for the maximum x value */
                 if (instanceptr[instance_no].xvert[loop] > xmax)
                         xmax = instanceptr[instance_no].xvert[loop];
 
-                /* looking for the maxlmum y value */
+                /* looking for the maximum y value */
                 if (instanceptr[instance_no].yvert[loop] > ymax)
                         ymax = instanceptr[instance_no].yvert[loop];
 
