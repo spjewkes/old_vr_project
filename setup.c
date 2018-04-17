@@ -1,9 +1,9 @@
 /******************************************
 *  #### ##### ###### ## ## ####      #### *
-* ##    ##      ##   ## ## ## ##    ##    *
-* ##### ####    ##   ## ## ####     ##    *
-*    ## ##      ##   ## ## ##       ##    *
-* ####  #####   ##    ###  ##    ##  #### *
+* ##    ##      ##   ## ## ## ##    ##    *
+* ##### ####    ##   ## ## ####     ##    *
+*    ## ##      ##   ## ## ##       ##    *
+* ####  #####   ##    ###  ##    ##  #### *
 ******************************************/
 /****************
 * include files *
@@ -12,7 +12,7 @@
 #include <alloc.h>
 
 /*********************************************
-* forward declaration of external prototypes *
+* forward declaration of external prototypes *
 *********************************************/
 extern int error(char *errno, char *message, int line_no);
 extern void warn(char *warnno, char *message, int line_no);
@@ -21,7 +21,7 @@ extern void rotate(float *pntx, float *pnty, float *pntz, float angx, float angy
 extern void scale(float *pntx, float *pnty, float *pntz, float sclx, float scly, float sclz);
 
 /************************************
-* declaration of external variables *
+* declaration of external variables *
 ************************************/
 extern struct master *masterptr;
 extern struct instance *instanceptr;
@@ -29,7 +29,7 @@ extern struct viewer user;
 extern int lincnt;
 
 /*****************************************************************************
-* init_user() - initialises user variables                                   *
+* init_user() - initialises user variables                                   *
 *****************************************************************************/
 void init_user(void)
 {
@@ -50,7 +50,7 @@ void init_user(void)
 }
 
 /*****************************************************************************
-* init_master() - initialises the array which will store the master objects  *
+* init_master() - initialises the array which will store the master objects  *
 *****************************************************************************/
 int init_master(int no_objects)
 {
@@ -59,7 +59,7 @@ int init_master(int no_objects)
         debug("init_master()", 1);
 
         /* create the space required for the master objects */
-        masterptr = (struct master *) malloc(sizeof(struct master) *  no_objects);
+        masterptr = (struct master *) malloc(sizeof(struct master) *  no_objects);
 
         if (masterptr == NULL)
                 return(error("O043", "Cannot allocate memory", 0));
@@ -194,7 +194,7 @@ int create_object_instance(struct master *masterptr, struct instance *instancept
 
 /***************************************************************************
 * remove master() - removes the array which stores the master objects      *
-***************************************************************************/
+***************************************************************************/
 void remove_master(int no_objects)
 {
         int loop;

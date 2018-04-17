@@ -42,7 +42,7 @@ extern struct viewer user;
 
 /****************************************************************************
 * screen open() - function to open a graphics screen in 256 vesa mode       *
-*                 mode are: 0 - 320x200    1 - 640x400    2 - 640x480       *
+*                 mode are: 0 - 320x200    1 - 640x400    2 - 640x480       *
 *                           3 - 800x600    4 - 1024x768                     *
 ****************************************************************************/
 int screen_open(int mode)
@@ -505,7 +505,7 @@ int clip3dpara(float pre_array[][3], float post_array[][3], float minz)
 }
 
 /****************************************************************************
-* clip3d() - function to clip a line to a 3d viewing volume - based on the  *
+* clip3d() - function to clip a line to a 3d viewing volume - based on the  *
 *            pseudo code in the Foley and van Dam book page 274             *
 *            this function is for a canonical perspective-projection        *
 *            viewing volume                                                 *

@@ -329,7 +329,7 @@ void scale(float *pntx, float *pnty, float *pntz,
 }
 
 /***************************************************************************
-* translate() - function to translate a single point described by an x, y  *
+* translate() - function to translate a single point described by an x, y  *
 *               and z value by three translation values for the x, y and   *
 *               z planes                                                   *
 ***************************************************************************/
@@ -342,7 +342,7 @@ void translate(float *pntx, float *pnty, float *pntz,
 }
 
 /***************************************************************************
-* translation() - function to offset an entire instance by x, y and z      *
+* translation() - function to offset an entire instance by x, y and z      *
 *                 values (i.e. a tranlation of the object)                 *
 ***************************************************************************/
 void translation(struct instance *instanceptr, int instance_no,

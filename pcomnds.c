@@ -51,7 +51,7 @@ extern struct viewer user;
 
 /****************************************************************************
 * process_location() - process the command which defines the user obJect's  *
-*                      initial location                                     *
+*                      initial location                                     *
 ****************************************************************************/
 int process_location(float *locx, float *locy, float *locz)
 {
@@ -71,7 +71,7 @@ int process_location(float *locx, float *locy, float *locz)
 
         if (check(",") != OKAY)
                 RESULT = error("0017", "Syntax error with location definition", lincnt);
-        
+        
         *locz = fgetnum();
 
         if (check("") != BLANK)
@@ -81,8 +81,8 @@ int process_location(float *locx, float *locy, float *locz)
 }
 
 /****************************************************************************
-* process_direction() - process the command which defines the user object's *                                                                                                    **
-*                       initial direction                                   *
+* process_direction() - process the command which defines the user object's *                                                                                                    **
+*                       initial direction                                   *
 ****************************************************************************/
 int process_direction(float *angx, float *angy, float *angz)
 {
@@ -92,17 +92,17 @@ int process_direction(float *angx, float *angy, float *angz)
 
         if (check("=") != OKAY)
                 RESULT = error("0006", "Missing assignment symbol", lincnt);
-        
+        
         *angx = fgetnum();
 
         if (check(",") != OKAY)
                 RESULT = error("0018", "Syntax error with user direction definition", lincnt);
-        
+        
         *angy = fgetnum();
 
         if (check(",") != OKAY)
                 RESULT = error("0018", "Syntax error with user direction definition", lincnt);
-        
+        
         *angz = fgetnum();
 
         if (check("") != BLANK)
@@ -112,8 +112,8 @@ int process_direction(float *angx, float *angy, float *angz)
 }
 
 /****************************************************************************
-* process_radius - process the command which defines the user object's      *
-*                  radius                                                   *
+* process_radius - process the command which defines the user object's      *
+*                  radius                                                   *
 ****************************************************************************/
 int process_radius(float *radius)
 {
@@ -123,7 +123,7 @@ int process_radius(float *radius)
 
         if (check("=") != OKAY)
                 RESULT = error("0006", "Missing assignment symbol", lincnt);
-        
+        
         *radius = fgetnum();
 
         if (check("") != BLANK)
@@ -133,7 +133,7 @@ int process_radius(float *radius)
 }
 
 /****************************************************************************
-* process_angle() - process the command which defines the master object's   *
+* process_angle() - process the command which defines the master object's   *
 *                   initial angle                                           *
 ****************************************************************************/
 int process_angle(float *angx, float *angy, float *angz)
@@ -330,7 +330,7 @@ int process_specularity(float *specularity)
 /****************************************************************************
 * process_outcome() - process the command which defines the instance        *
 *                     object's outcome string                               *
-*                     this can either make an object solid or not           *
+*                     this can either make an object solid or not           *
 *                     there is also the possibility to execute DOS commands *
 *                     with this string                                      *
 ****************************************************************************/

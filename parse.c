@@ -390,9 +390,9 @@ int process_objects(int no_objects)
 }
 
 /****************************************************************************
-* check_object_values() - process the optional angle and scale commands for *
-*                         the master object and see that it's definition is *
-*                         correctly terminated                              *
+* check_object_values() - process the optional angle and scale commands for *
+*                         the master object and see that it's definition is *
+*                         correctly terminated                              *
 ****************************************************************************/
 int check_object_values(int object_no, int object_pos, int no_objects)
 {

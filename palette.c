@@ -59,7 +59,7 @@ void spread_col(int start_col, int end_col, int palette[][3])
                 /* set the values in the palette array */
                 palette[minc+loop][RED] = (int)red;
                 palette[minc+loop][GREEN] = (int)green;
-                palette[minc+loop][BLUE] = (int)blues;
+                palette[minc+loop][BLUE] = (int)blue;
         }
 }
 
